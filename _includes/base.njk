@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First blog post ⬅️ - Dofu Games</title>
+    <title>{{ title }} - Dofu Games</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
@@ -11,17 +11,7 @@
 </head>
 <body>
     <div class="container">
-        <header class="site-header">
-  <a href="/" style="text-decoration: none; display: flex; align-items: center; gap: 1.5rem;">
-    <img src="/logo.png" alt="Dofu Games Logo" class="logo">
-    <h1>Dofu Games</h1>
-  </a>
-</header>
-
-<article class="post-content">
-  <h1>First blog post ⬅️</h1>
-
-</article>
+        {{ content | safe }}
     </div>
 </body>
 </html>

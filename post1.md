@@ -1,5 +1,6 @@
 ---
 title: First blog post ⬅️
 tags: posts
+layout: post.njk
 ---
 # {{ title }}
