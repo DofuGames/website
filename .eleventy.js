@@ -10,6 +10,7 @@ module.exports = function(eleventyConfig) {
       input: ".",
       output: "_site",
       includes: "_includes"
-    }
+    },
+    pathPrefix: "/"
   };
 };

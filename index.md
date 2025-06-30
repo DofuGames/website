@@ -3,7 +3,7 @@ title: Dofu Games
 layout: base
 ---
 <header class="site-header">
-  <img src="/logo.png" alt="Dofu Games Logo" class="logo">
+  <img src="{{ '/logo.png' | url }}" alt="Dofu Games Logo" class="logo">
   <h1>Dofu Games</h1>
 </header>
 
