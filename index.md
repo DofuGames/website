@@ -12,7 +12,7 @@ layout: base
     <h2>Beyond the Glade</h2>
     <p>Lead a stranded cult on a mysterious island in this <strong>roguelite city builder</strong>. Build, offer tribute, and survive disasters to placate the heavens and maintain hope.</p>
     <div class="subscribe-wrapper">
-      <p class="subscribe-text">Subscribe for development and demo news!</p>
+      <p class="subscribe-text">Subscribe for development and demo updates!</p>
       <div class="substack-iframe-container">
         <iframe src="https://dofugames.substack.com/embed" width="480" height="150" frameborder="0" scrolling="no"></iframe>
       </div>

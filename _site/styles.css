@@ -2,11 +2,10 @@
     --color-primary: #65d4ac;
     --color-primary-light: #7de5bd;
     --color-primary-shadow: rgba(101, 212, 172, 0.3);
-    --color-primary-shadow-light: rgba(101, 212, 172, 0.4);
-    --color-primary-shadow-dark: rgba(101, 212, 172, 0.1);
+    --color-primary-shadow-dark: rgb(6, 40, 40, 0.5);
     --color-primary-bg: rgba(101, 212, 172, 0.1);
     --color-primary-border: rgba(101, 212, 172, 0.2);
-    
+
     --color-bg-dark: #063d3c;
     --color-bg-dark-90: rgba(6, 61, 60, 0.9);
     --color-bg-dark-70: rgba(6, 61, 60, 0.7);
@@ -14,15 +13,15 @@
     --color-bg-card: rgba(10, 84, 82, 0.90);
     --color-bg-card-hover: rgba(13, 100, 97, 0.90);
     --color-bg-black-30: rgba(0, 0, 0, 0.3);
-    
+
     --color-text-primary: #e0e0e0;
     --color-text-secondary: #999;
     --color-text-muted: #b8b8b8;
-    
+
     --font-primary: 'Arvo', serif;
     --font-display: 'Love Ya Like A Sister', cursive;
     --font-mono: 'Courier New', monospace;
-    
+
     --font-size-xs: 0.75rem;
     --font-size-sm: 0.875rem;
     --font-size-base: 1rem;
@@ -32,7 +31,7 @@
     --font-size-3xl: 1.875rem;
     --font-size-4xl: 2.25rem;
     --font-size-5xl: 3rem;
-    
+
     --border-radius-sm: 4px;
     --border-radius-md: 8px;
     --border-radius-lg: 10px;
@@ -78,7 +77,7 @@ body {
     width: 80px;
     height: 80px;
     border-radius: var(--border-radius-xl);
-    box-shadow: 0 4px 12px var(--color-primary-shadow);
+    box-shadow: 0 4px 10px var(--color-primary-shadow);
     object-fit: cover;
     border: 2px solid var(--color-primary);
 }
@@ -90,7 +89,7 @@ body {
     border-radius: var(--border-radius-lg);
     overflow: hidden;
     background: var(--color-bg-dark);
-    box-shadow: 0 2px 10px var(--color-primary-shadow-dark);
+    box-shadow: 0 0 10px var(--color-primary-shadow);
 }
 
 .game-section::before {
@@ -138,7 +137,9 @@ body {
 .game-section .subscribe-text {
     font-size: var(--font-size-xl);
     margin-bottom: 1rem;
-    color: var(--color-primary);
+    padding: 0 1rem;
+    color: var(--color-primary-light);
+    text-shadow: 0 2px 0 var(--color-primary-shadow-dark);
 }
 
 .substack-iframe-container {
@@ -148,8 +149,8 @@ body {
 }
 
 .substack-iframe-container iframe {
-    max-width: 100%;
     border-radius: var(--border-radius-lg);
+    box-shadow: 0 2px 0 var(--color-primary-shadow-dark);
 }
 
 .placeholder {
@@ -161,7 +162,7 @@ body {
     background: var(--color-bg-dark-50);
     padding: 2rem;
     border-radius: var(--border-radius-lg);
-    box-shadow: 0 2px 10px var(--color-primary-shadow-dark);
+    box-shadow: 0 2px 0 var(--color-primary-shadow-dark);
     margin-bottom: 3rem;
 }
 
@@ -187,9 +188,8 @@ body {
     padding: 1.5rem;
     border-radius: var(--border-radius-xl);
     transition: all 0.2s ease;
-    border: 2px solid transparent;
+    border: 2px solid var(--color-primary-border);
     cursor: pointer;
-    box-shadow: 0 2px 8px var(--color-bg-black-30);
     overflow: hidden;
 }
 
@@ -220,7 +220,7 @@ body {
 }
 
 .post-card-link:hover .post-card {
-    box-shadow: 0 6px 20px var(--color-primary-shadow-light);
+    box-shadow: 0 6px 20px var(--color-primary-shadow);
     border-color: var(--color-primary);
 }
 
@@ -284,12 +284,6 @@ body {
         padding: 0 0.5rem;
     }
 
-    .substack-iframe-container iframe {
-        max-width: 100%;
-        width: 100%;
-        height: 160px;
-    }
-    
     .posts-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -313,7 +307,7 @@ body {
     background: var(--color-bg-dark-50);
     padding: 3rem;
     border-radius: var(--border-radius-lg);
-    box-shadow: 0 2px 10px var(--color-primary-shadow-dark);
+    box-shadow: 0 2px 0 var(--color-primary-shadow-dark);
     margin-bottom: 3rem;
     max-width: 800px;
     margin-left: auto;
@@ -476,7 +470,7 @@ body {
 .discord-link:hover {
     background: var(--color-primary-light);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px var(--color-primary-shadow-light);
+    box-shadow: 0 6px 20px var(--color-primary-shadow);
 }
 
 .discord-link svg {
@@ -491,7 +485,7 @@ body {
         width: 50px;
         height: 50px;
     }
-    
+
     .discord-link svg {
         width: 28px;
         height: 28px;
