@@ -89,7 +89,7 @@ body {
     border-radius: var(--border-radius-lg);
     overflow: hidden;
     background: var(--color-bg-dark);
-    box-shadow: 0 0 10px var(--color-primary-shadow);
+    border: solid 1px var(--color-primary-border);
 }
 
 .game-section::before {
