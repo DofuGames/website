@@ -1,5 +1,5 @@
 ---
-title: Dofu Games
+title: Beyond the Glade
 layout: base
 ---
 <header class="site-header">
