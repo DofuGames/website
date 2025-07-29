@@ -1,5 +1,5 @@
 ---
-title: Beyond the Glade
+title: Offshore Prophets
 layout: base
 ---
 <header class="site-header">
@@ -9,10 +9,10 @@ layout: base
 
 <div class="game-section">
   <div class="game-content">
-    <h2>Beyond the Glade</h2>
+    <h2>Offshore Prophets</h2>
     <p>Lead a stranded cult on a mysterious island in this <strong>roguelite city builder</strong>. Build, offer tribute, and survive disasters to placate the heavens and maintain hope.</p>
     <div class="subscribe-wrapper">
-      <p class="subscribe-text"><a href="https://dofugames.substack.com/embed">Subscribe for development and demo updates!</a></p>
+      <p class="subscribe-text"><a href="https://dofugames.substack.com/embed">Subscribe for development and demo news!</a></p>
       <div class="substack-iframe-container">
         <iframe src="https://dofugames.substack.com/embed" width="480" height="150" frameborder="0" scrolling="no"></iframe>
       </div>
