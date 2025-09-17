@@ -10,7 +10,7 @@ layout: base
 <div class="game-section">
   <div class="game-content">
     <h2>Offshore Prophets</h2>
-    <p>Lead a stranded cult on a mysterious island in this <strong>roguelite city builder</strong>. Build, offer tribute, and survive disasters to placate the heavens and maintain hope.</p>
+    <p>Carve out a home on a perilous island in this <strong>roguelite city builder</strong>. Build production chains, discover powerful synergies, and endure catastrophic disasters as each attempt reveals new strategies to survive against the odds.</p>
     <div class="subscribe-wrapper">
       <p class="subscribe-text"><a href="https://dofugames.substack.com/embed">Subscribe for development and demo news!</a></p>
       <div class="substack-iframe-container">
