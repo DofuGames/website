@@ -87,35 +87,23 @@ body {
     border: solid 1px var(--color-primary-border);
 }
 
-.game-section::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    aspect-ratio: 1600 / 972;
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url('background.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 0;
+.game-background {
+    position: relative;
+    margin: -4rem -5rem 0;
 }
 
-.game-section::after {
+.game-background img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.game-background::before {
     content: '';
     position: absolute;
-    width: 100%;
-    aspect-ratio: 1600 / 972;
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    inset: 0;
     background-image: linear-gradient(to bottom, rgba(6, 61, 60, 1) 0%, rgba(6, 61, 60, 0) 18%, rgba(6, 61, 60, 0) 82%, rgba(6, 61, 60, 1) 100%), linear-gradient(to bottom, rgba(6, 61, 60, 0.7) 20%, rgba(6, 61, 60, 0.35) 40%, rgba(6, 61, 60, 0.35) 70%, rgba(6, 61, 60, 0.7) 100%);
-    background-size: 100% 100%, 100% 100%;
-    background-position: center, center;
-    background-repeat: no-repeat, no-repeat;
     pointer-events: none;
-    z-index: 1;
 }
 
 .game-content {
@@ -146,6 +134,8 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .store-link {
@@ -175,10 +165,6 @@ body {
     width: 28px;
     height: 28px;
     display: block;
-}
-
-.subscribe-wrapper {
-    margin-top: 23rem;
 }
 
 .game-section .subscribe-text {
@@ -328,13 +314,13 @@ body {
         padding: 0 0.5rem;
     }
 
-    .subscribe-wrapper {
-        margin-top: 18rem;
-    }
-
     .game-section .subscribe-text {
         font-size: var(--font-size-lg);
         padding: 0 0.5rem;
+    }
+
+    .game-background {
+        margin: -3rem -1.5rem 0;
     }
 
     .posts-grid {
@@ -470,44 +456,13 @@ body {
     margin: 2.5rem 0;
 }
 
-@media (max-width: 768px) {
-    .post-content {
-        padding: 2rem 1.5rem;
-    }
-
-    .post-content h1 {
-        font-size: var(--font-size-2xl);
-        margin-bottom: 1.5rem;
-    }
-
-    .post-content h2 {
-        font-size: var(--font-size-2xl);
-        margin-top: 2rem;
-    }
-
-    .post-content h3 {
-        font-size: var(--font-size-xl);
-    }
-
-    .post-content p,
-    .post-content ul,
-    .post-content ol {
-        font-size: var(--font-size-base);
-    }
-
-    .post-content ul,
-    .post-content ol {
-        margin-left: 1.5rem;
-    }
-}
-
 /* Discord link */
 .discord-link {
     position: fixed;
-    bottom: 2rem;
+    top: 2rem;
     right: 2rem;
-    width: 56px;
-    height: 56px;
+    width: 44px;
+    height: 44px;
     background: var(--color-primary);
     color: var(--color-bg-dark);
     border-radius: 50%;
@@ -524,68 +479,8 @@ body {
 }
 
 .discord-link .discord-icon {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
 }
 
-@media (max-width: 768px) {
-    .discord-link {
-        bottom: 1.5rem;
-        right: 1rem;
-        width: 50px;
-        height: 50px;
-    }
 
-    .discord-link .discord-icon {
-        width: 28px;
-        height: 28px;
-    }
-}
-
-/* Extra small devices */
-@media (max-width: 480px) {
-    .site-header h1 {
-        font-size: var(--font-size-2xl);
-    }
-
-    .logo {
-        width: 60px;
-        height: 60px;
-    }
-
-    .game-section {
-        padding: 2rem 1rem 1rem 1rem;
-    }
-
-    .game-section h2 {
-        font-size: var(--font-size-2xl);
-    }
-
-    .game-section p {
-        font-size: var(--font-size-sm);
-    }
-
-    .subscribe-wrapper {
-        margin-top: 12rem;
-    }
-
-    .game-section .subscribe-text {
-        font-size: var(--font-size-base);
-    }
-
-    .post-content {
-        padding: 1.5rem 1rem;
-    }
-
-    .post-content h1 {
-        font-size: var(--font-size-2xl);
-    }
-
-    .post-content h2 {
-        font-size: var(--font-size-xl);
-    }
-
-    .post-content h3 {
-        font-size: var(--font-size-lg);
-    }
-}

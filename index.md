@@ -17,6 +17,9 @@ layout: base
         <span>Wishlist on Steam</span>
       </a>
     </div>
+    <div class="game-background">
+      <img src="{{ '/background.png' | url }}" alt="" role="presentation">
+    </div>
     <div class="subscribe-wrapper">
       <p class="subscribe-text"><a href="https://dofugames.substack.com/subscribe">Subscribe for development and demo news!</a></p>
       <div class="substack-iframe-container">
