@@ -1,13 +1,32 @@
+const path = require("node:path");
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+
 module.exports = function(eleventyConfig) {
   // Copy static assets
   eleventyConfig.addPassthroughCopy("favicon.ico");
-  eleventyConfig.addPassthroughCopy("logo.png");
   eleventyConfig.addPassthroughCopy("pattern.png");
-  eleventyConfig.addPassthroughCopy("background.png");
   eleventyConfig.addPassthroughCopy("styles.css");
-  eleventyConfig.addPassthroughCopy("steam-icon.svg");
-  eleventyConfig.addPassthroughCopy("discord-icon.svg");
-  
+
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    widths: ["auto"],
+    formats: ["png"],
+    outputDir: "_site",
+    urlPath: "/",
+    sharpJpegOptions: {
+      quality: 90,
+      mozjpeg: true,
+    },
+    sharpPngOptions: {
+      compressionLevel: 9,
+      effort: 10,
+      palette: true,
+    },
+    filenameFormat: (id, src, width, format) => {
+      const extension = format === "jpeg" ? "jpg" : format;
+      return `${path.basename(src, path.extname(src))}.${extension}`;
+    },
+  });
+
   return {
     dir: {
       input: ".",

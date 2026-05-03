@@ -13,12 +13,12 @@ layout: base
     <p>Carve out a home on a perilous island in this <strong>roguelite city builder</strong>. Build production chains, discover powerful synergies, and endure catastrophic disasters as each attempt reveals new strategies to survive against the odds.</p>
     <div class="store-links">
       <a class="store-link" href="https://store.steampowered.com/app/3467680/Offshore_Prophets/" target="_blank" rel="noopener">
-        <img class="store-icon" src="{{ '/steam-icon.svg' | url }}" alt="Steam">
+        <img class="store-icon" src="{{ '/steam-icon.svg' | url }}" alt="Steam" eleventy:widths="56" eleventy:formats="png">
         <span>Wishlist on Steam</span>
       </a>
     </div>
     <div class="game-background">
-      <img src="{{ '/background.png' | url }}" alt="" role="presentation">
+      <img src="{{ '/background.png' | url }}" alt="" role="presentation" eleventy:formats="jpeg">
     </div>
     <div class="subscribe-wrapper">
       <p class="subscribe-text"><a href="https://dofugames.substack.com/subscribe">Subscribe for development and demo news!</a></p>
