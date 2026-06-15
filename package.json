@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Dofu Games website",
   "scripts": {
+    "copy:presskit": "node scripts/copy-presskit.js",
     "build": "eleventy",
     "start": "eleventy --serve",
     "watch": "eleventy --watch"
