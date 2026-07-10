@@ -6,6 +6,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("pattern.png");
   eleventyConfig.addPassthroughCopy("styles.css");
+  eleventyConfig.addPassthroughCopy("presskit");
 
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     widths: ["auto"],
