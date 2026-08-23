@@ -1,5 +1,5 @@
 ---
-title: Offshore Prophets
+title: Dig Dan Dig!
 layout: base
 ---
 <header class="site-header">
@@ -9,16 +9,16 @@ layout: base
 
 <div class="game-section">
   <div class="game-content">
-    <h2>Offshore Prophets</h2>
-    <p>Carve out a home on a perilous island in this <strong>roguelite city builder</strong>. Build production chains, discover powerful synergies, and endure catastrophic disasters as each attempt reveals new strategies to survive against the odds.</p>
+    <h2>Dig Dan Dig!</h2>
+    <p>Dig for resources and trade them for powerful biological upgrades in this incremental mining adventure. Transform yourself beyond human limits to escape the underground!</p>
     <div class="store-links">
-      <a class="store-link" href="https://store.steampowered.com/app/3467680/Offshore_Prophets/" target="_blank" rel="noopener">
+      <a class="store-link" href="https://store.steampowered.com/app/4934650/Dig_Dan_Dig/" target="_blank" rel="noopener">
         <img class="store-icon" src="{{ '/steam-icon.svg' | url }}" alt="Steam" eleventy:widths="56" eleventy:formats="png">
         <span>Wishlist on Steam</span>
       </a>
     </div>
     <div class="game-background">
-      <img src="{{ '/background.png' | url }}" alt="" role="presentation" eleventy:formats="jpeg">
+      <img src="{{ '/dig-dan-dig-background.png' | url }}" alt="" role="presentation" eleventy:formats="jpeg">
     </div>
     <div class="subscribe-wrapper">
       <p class="subscribe-text"><a href="https://dofugames.substack.com/subscribe">Subscribe for development and demo news!</a></p>
