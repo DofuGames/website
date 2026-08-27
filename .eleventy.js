@@ -7,6 +7,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("pattern.png");
   eleventyConfig.addPassthroughCopy("styles.css");
   eleventyConfig.addPassthroughCopy("presskit");
+  eleventyConfig.addPassthroughCopy("dig-dan-dig-demo");
 
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     widths: ["auto"],
